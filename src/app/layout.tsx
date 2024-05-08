@@ -3,11 +3,12 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import TopBar from "./components/topBar";
 import SideBar from "./components/sideBar";
+import NavBar from "./components/navBar";
 
 const inter = Roboto({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
-  title: "YouTube Music",
+  title: "YouTube-Music CLONE",
 };
 
 export default function RootLayout({
@@ -18,8 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-gray-100">
+        <div className=" h-screen w-full overflow-y-hidden">
           {/*  <TopBar />*/}
+          <NavBar />
           <SideBar />
           {children}
         </div>
