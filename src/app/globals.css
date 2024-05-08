@@ -31,3 +31,36 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Estilo básico de la barra de desplazamiento */
+:root {
+  --scrollbar-color: #AAAAAA; /* Color por defecto */
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color);
+  border-radius: 5px;
+}
+
+/* Cambiar el color del pulgar al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #cacaca;
+}
+
+/* Quitar los botones de incremento y decremento de los input tipo número */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
