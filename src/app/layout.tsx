@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import TopBar from "./components/topBar";
+import SideBar from "./components/sideBar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "YouTube Music",
@@ -17,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TopBar />
+        {/*  <TopBar />*/}
+        <SideBar /> 
         {children}
       </body>
     </html>

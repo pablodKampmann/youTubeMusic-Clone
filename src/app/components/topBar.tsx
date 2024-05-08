@@ -5,6 +5,7 @@ import { FaRegWindowMinimize, FaRegWindowRestore } from "react-icons/fa6";
 import { FaRegWindowClose } from "react-icons/fa";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { BiExtension } from "react-icons/bi";
+import CloseIcon from '@mui/icons-material/Close';
 
 export default function TopBar() {
 
@@ -19,14 +20,14 @@ export default function TopBar() {
                 <div className='flex justify-center items-center'>
                     <BiExtension className=' ml-2' />
                     <HiOutlineDotsVertical className=' ml-2' />
-                    <div className='flex justify-center hover:bg-white  hover:bg-opacity-5 transition duration-150 items-center w-[50px] h-full '>
+                    <div className='flex justify-center hover:bg-white  hover:bg-opacity-15 transition duration-150 items-center w-[50px] h-full '>
                         <FaRegWindowMinimize className='' />
                     </div>
-                    <div className='flex justify-center hover:bg-white  hover:bg-opacity-5 transition duration-150 items-center w-[50px] h-full '>
+                    <div className='flex justify-center hover:bg-white  hover:bg-opacity-15 transition duration-150 items-center w-[50px] h-full '>
                         <FaRegWindowRestore className='' />
                     </div>
-                    <div className='flex justify-center  hover:bg-red-800 hover:bg-opacity-90 transition duration-150 items-center w-[60px] h-full '>
-                        <FaRegWindowClose className='' />
+                    <div className='flex justify-center  hover:bg-red-600 hover:bg-opacity-90 transition duration-150 items-center w-[60px] h-full '>
+                        <CloseIcon className='' />
                     </div>
                 </div>
             </div>
