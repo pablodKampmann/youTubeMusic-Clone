@@ -27,37 +27,99 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full flex h-fit mt-5 space-x-6">
+      <div className="w-full whitespace-nowrap  overflow-x-auto flex  h-fit mt-5 space-x-6">
 
-        <div className="w-[16%] relative">
-          <div className="relative hover:opacity-60 cursor-pointer border-2 border-transparent transition duration-300 hover:shadow-2xl hover:border-[#292929] rounded-lg flex justify-center items-center">
+
+
+        <div className="relative">
+          <div className="relative w-[180px] hover:opacity-60 cursor-pointer border-2 border-transparent transition duration-300 hover:shadow-2xl hover:border-[#AAAAAA] rounded-lg flex justify-center items-center">
             <Image quality={100} className=' rounded-md  object-cover ' src='/example2.jpg' alt='example2' width={544} height={544} />
             <IoMdPlay className="absolute  opacity-100" size={40} />
           </div>
-          <h1 className="mt-2.5 font-semibold">Flashing Lights</h1>
+          <h1 className="mt-2.5 font-semibold whitespace-pre-line leading-5">Flashing Lights</h1>
           <div className="flex relative">
-            <h2 className="relative leading-5 text-[#B2B2B2]">Canción • Kanye West</h2>
+            <h2 className="relative leading-5	 text-[#B2B2B2]">Canción • Kanye West</h2>
           </div>
         </div>
 
-        <div className="w-[16%] relative">
-          <div className="relative hover:opacity-60 cursor-pointer border-2 border-transparent transition duration-300 hover:shadow-2xl hover:border-[#292929] rounded-lg flex justify-center items-center">
+        <div className="relative">
+          <div className="relative w-[180px] hover:opacity-60 cursor-pointer border-2 border-transparent transition duration-300 hover:shadow-2xl hover:border-[#AAAAAA] rounded-lg flex justify-center items-center">
             <Image quality={100} className=' rounded-md  object-cover ' src='/example3.jpg' alt='example3' width={544} height={544} />
             <IoMdPlay className="absolute  opacity-100" size={40} />
           </div>
-          <h1 className="mt-2.5 font-semibold">MY EYES</h1>
-          <div className="flex relative">
-            <MdExplicit className="text-[#B4B4B4] absolute top-0 " size={19} />
-            <h2 className="  relative leading-5	 text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canción • Travis Scott</h2>
+          <h1 className="mt-2.5 font-semibold whitespace-pre-line leading-5">MY EYES</h1>
+          <div className="flex  relative">
+            <MdExplicit className="text-[#B4B4B4] absolute top-0" size={19} />
+            <h2 className="relative leading-5 	text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canción • Travis Scott</h2>
           </div>
         </div>
 
-        <div className="w-[16%] relative">
-          <div className="relative hover:opacity-60 cursor-pointer border-2 border-transparent transition duration-300 hover:shadow-2xl hover:border-[#292929] rounded-lg flex justify-center items-center">
+        <div className="relative">
+          <div className="relative w-[180px] hover:opacity-60 cursor-pointer border-2 border-transparent transition duration-300 hover:shadow-2xl hover:border-[#AAAAAA] rounded-lg flex justify-center items-center">
             <Image quality={100} className=' rounded-md  object-cover ' src='/example1.jpg' alt='example1' width={544} height={544} />
             <IoMdPlay className="absolute  opacity-100" size={40} />
           </div>
-          <h1 className="mt-2.5 font-semibold">High Fashion (con Mustard)</h1>
+          <h1 className="mt-2.5 font-semibold whitespace-pre-line leading-5">High Fashion (con Mustard)</h1>
+          <div className="flex relative">
+            <MdExplicit className="text-[#B4B4B4] absolute top-0 " size={19} />
+            <h2 className="relative leading-5	 text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canción • Roddy Ricch</h2>
+          </div>
+        </div>
+
+        <div className="relative">
+          <div className="relative w-[180px] hover:opacity-60 cursor-pointer border-2 border-transparent transition duration-300 hover:shadow-2xl hover:border-[#AAAAAA] rounded-lg flex justify-center items-center">
+            <Image quality={100} className=' rounded-md  object-cover ' src='/example1.jpg' alt='example1' width={544} height={544} />
+            <IoMdPlay className="absolute  opacity-100" size={40} />
+          </div>
+          <h1 className="mt-2.5 font-semibold whitespace-pre-line leading-5">High Fashion (con Mustard)</h1>
+          <div className="flex relative">
+            <MdExplicit className="text-[#B4B4B4] absolute top-0 " size={19} />
+            <h2 className="relative leading-5	 text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canción • Roddy Ricch</h2>
+          </div>
+        </div>
+
+        <div className="relative">
+          <div className="relative w-[180px] hover:opacity-60 cursor-pointer border-2 border-transparent transition duration-300 hover:shadow-2xl hover:border-[#AAAAAA] rounded-lg flex justify-center items-center">
+            <Image quality={100} className=' rounded-md  object-cover ' src='/example1.jpg' alt='example1' width={544} height={544} />
+            <IoMdPlay className="absolute  opacity-100" size={40} />
+          </div>
+          <h1 className="mt-2.5 font-semibold whitespace-pre-line leading-5">High Fashion (con Mustard)</h1>
+          <div className="flex relative">
+            <MdExplicit className="text-[#B4B4B4] absolute top-0 " size={19} />
+            <h2 className="relative leading-5	 text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canción • Roddy Ricch</h2>
+          </div>
+        </div>
+
+        <div className="relative">
+          <div className="relative w-[180px] hover:opacity-60 cursor-pointer border-2 border-transparent transition duration-300 hover:shadow-2xl hover:border-[#AAAAAA] rounded-lg flex justify-center items-center">
+            <Image quality={100} className=' rounded-md  object-cover ' src='/example1.jpg' alt='example1' width={544} height={544} />
+            <IoMdPlay className="absolute  opacity-100" size={40} />
+          </div>
+          <h1 className="mt-2.5 font-semibold whitespace-pre-line leading-5">High Fashion (con Mustard)</h1>
+          <div className="flex relative">
+            <MdExplicit className="text-[#B4B4B4] absolute top-0 " size={19} />
+            <h2 className="relative leading-5	 text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canción • Roddy Ricch</h2>
+          </div>
+        </div>
+
+        <div className="relative">
+          <div className="relative w-[180px] hover:opacity-60 cursor-pointer border-2 border-transparent transition duration-300 hover:shadow-2xl hover:border-[#AAAAAA] rounded-lg flex justify-center items-center">
+            <Image quality={100} className=' rounded-md  object-cover ' src='/example1.jpg' alt='example1' width={544} height={544} />
+            <IoMdPlay className="absolute  opacity-100" size={40} />
+          </div>
+          <h1 className="mt-2.5 font-semibold whitespace-pre-line leading-5">High Fashion (con Mustard)</h1>
+          <div className="flex relative">
+            <MdExplicit className="text-[#B4B4B4] absolute top-0 " size={19} />
+            <h2 className="relative leading-5	 text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canción • Roddy Ricch</h2>
+          </div>
+        </div>
+
+        <div className="relative">
+          <div className="relative w-[180px] hover:opacity-60 cursor-pointer border-2 border-transparent transition duration-300 hover:shadow-2xl hover:border-[#AAAAAA] rounded-lg flex justify-center items-center">
+            <Image quality={100} className=' rounded-md  object-cover ' src='/example1.jpg' alt='example1' width={544} height={544} />
+            <IoMdPlay className="absolute  opacity-100" size={40} />
+          </div>
+          <h1 className="mt-2.5 font-semibold whitespace-pre-line leading-5">High Fashion (con Mustard)</h1>
           <div className="flex relative">
             <MdExplicit className="text-[#B4B4B4] absolute top-0 " size={19} />
             <h2 className="relative leading-5	 text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canción • Roddy Ricch</h2>
