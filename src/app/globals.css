@@ -39,7 +39,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 8px;
-  height: 8px;
+  height: 10px;
 }
 
 
@@ -66,3 +66,12 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+
+.container {
+  overflow-x: hidden;
+
+}
+
+.container:hover {
+  overflow-x: auto;
+}
