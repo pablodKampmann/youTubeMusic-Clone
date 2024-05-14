@@ -12,8 +12,56 @@ interface Props {
     minimize: boolean;
 }
 
-export default function TopBar({ minimize }: Props) {
+export default function SideBar({ minimize }: Props) {
     const pathname = usePathname();
+
+    interface Playlist {
+        name: string;
+        info: string;
+    }
+
+    const playlists: Playlist[] = [
+        {
+            name: "Miusic Definitive",
+            info: "Pablo Kampmann",
+        },
+        {
+            name: "THE.GOATEST.PLAYLIST",
+            info: "Pablo Kampmann",
+        },
+        {
+            name: "You knoww :d",
+            info: "Pablo Kampmann",
+        },
+        {
+            name: "🎧💊🎧",
+            info: "Pablo Kampmann",
+        },
+        {
+            name: "Música que me gusta",
+            info: "Generada automáticamente",
+        },
+        {
+            name: "Clasic",
+            info: "Pablo Kampmann",
+        },
+        {
+            name: "Rock🎸",
+            info: "Pablo Kampmann",
+        },
+        {
+            name: "RECLRPQTP",
+            info: "Pablo Kampmann",
+        },
+        {
+            name: "Sadd",
+            info: "Pablo Kampmann",
+        },
+        {
+            name: "Episodios para más tarde",
+            info: "Generada automáticamente",
+        },
+    ]
 
     return (
         <div className={` ${minimize ? 'w-[5%]' : 'w-[19%]'} transition-all h-[91%] transform duration-300  bg-[#030303] border-r border-[#292929]`}>
@@ -51,76 +99,15 @@ export default function TopBar({ minimize }: Props) {
                         <RxPlus className='mr-2 text-xs' size={26} /> Nueva lista
                     </button>
                     <div className='h-screen overflow-x-hidden transition duration-500 shadow-2xl border-t py-2 border-b border-transparent hover:border-[#292929] w-full mb-2  overflow-y-auto   pl-2 space-y-2 pr-2'>
-                        <button className='group whitespace-nowrap focus:outline-none w-full relative hover:bg-[#353535] transition duration-150 px-4 py-2 text-left rounded-lg'>
-                            <h1 className='text-base font-medium'>Miusic Definitive</h1>
-                            <p className='text-xs text-[#B4B4B4]'>Pablo Kampmann</p>
-                            <div className=' absolute group-hover:opacity-100 opacity-0 transition-opacity duration-150 top-4 right-4 bg-white rounded-full p-1 '>
-                                <IoMdPlay size={18} className='text-black pl-0.5' />
-                            </div>
-                        </button>
-                        <button className='group whitespace-nowrap w-full relative hover:bg-[#353535] transition duration-150 px-4 py-2 text-left rounded-lg'>
-                            <h1 className='text-base font-medium'>Miusic Definitive</h1>
-                            <p className='text-xs text-[#B4B4B4]'>Pablo Kampmann</p>
-                            <div className=' absolute group-hover:opacity-100 opacity-0 transition-opacity duration-150 top-4 right-4 bg-white rounded-full p-1 '>
-                                <IoMdPlay size={18} className='text-black pl-0.5' />
-                            </div>
-                        </button>
-                        <button className='group whitespace-nowrap w-full relative hover:bg-[#353535] transition duration-150 px-4 py-2 text-left rounded-lg'>
-                            <h1 className='text-base font-medium'>Miusic Definitive</h1>
-                            <p className='text-xs text-[#B4B4B4]'>Pablo Kampmann</p>
-                            <div className=' absolute group-hover:opacity-100 opacity-0 transition-opacity duration-150 top-4 right-4 bg-white rounded-full p-1 '>
-                                <IoMdPlay size={18} className='text-black pl-0.5' />
-                            </div>
-                        </button>
-                        <button className='group whitespace-nowrap w-full relative hover:bg-[#353535] transition duration-150 px-4 py-2 text-left rounded-lg'>
-                            <h1 className='text-base font-medium'>Miusic Definitive</h1>
-                            <p className='text-xs text-[#B4B4B4]'>Pablo Kampmann</p>
-                            <div className=' absolute group-hover:opacity-100 opacity-0 transition-opacity duration-150 top-4 right-4 bg-white rounded-full p-1 '>
-                                <IoMdPlay size={18} className='text-black pl-0.5' />
-                            </div>
-                        </button>
-                        <button className='group whitespace-nowrap w-full relative hover:bg-[#353535] transition duration-150 px-4 py-2 text-left rounded-lg'>
-                            <h1 className='text-base font-medium'>Miusic Definitive</h1>
-                            <p className='text-xs text-[#B4B4B4]'>Pablo Kampmann</p>
-                            <div className=' absolute group-hover:opacity-100 opacity-0 transition-opacity duration-150 top-4 right-4 bg-white rounded-full p-1 '>
-                                <IoMdPlay size={18} className='text-black pl-0.5' />
-                            </div>
-                        </button>
-                        <button className='group whitespace-nowrap w-full relative hover:bg-[#353535] transition duration-150 px-4 py-2 text-left rounded-lg'>
-                            <h1 className='text-base font-medium'>Miusic Definitive</h1>
-                            <p className='text-xs text-[#B4B4B4]'>Pablo Kampmann</p>
-                            <div className=' absolute group-hover:opacity-100 opacity-0 transition-opacity duration-150 top-4 right-4 bg-white rounded-full p-1 '>
-                                <IoMdPlay size={18} className='text-black pl-0.5' />
-                            </div>
-                        </button>
-                        <button className='group whitespace-nowrap w-full relative hover:bg-[#353535] transition duration-150 px-4 py-2 text-left rounded-lg'>
-                            <h1 className='text-base font-medium'>Miusic Definitive</h1>
-                            <p className='text-xs text-[#B4B4B4]'>Pablo Kampmann</p>
-                            <div className=' absolute group-hover:opacity-100 opacity-0 transition-opacity duration-150 top-4 right-4 bg-white rounded-full p-1 '>
-                                <IoMdPlay size={18} className='text-black pl-0.5' />
-                            </div>
-                        </button>
-                        <button className='group whitespace-nowrap w-full relative hover:bg-[#353535] transition duration-150 px-4 py-2 text-left rounded-lg'>
-                            <h1 className='text-base font-medium'>Miusic2 Definitive</h1>
-                            <p className='text-xs text-[#B4B4B4]'>Pablo Kampmann</p>
-                            <div className=' absolute group-hover:opacity-100 opacity-0 transition-opacity duration-150 top-4 right-4 bg-white rounded-full p-1 '>
-                                <IoMdPlay size={18} className='text-black pl-0.5' />
-                            </div>
-                        </button>
-                        <button className='group whitespace-nowrap w-full relative hover:bg-[#353535] transition duration-150 px-4 py-2 text-left rounded-lg'>
-                            <h1 className='text-base font-medium'>Miusic2 Definitive</h1>
-                            <p className='text-xs text-[#B4B4B4]'>Pablo Kampmann</p>
-                            <div className=' absolute group-hover:opacity-100 opacity-0 transition-opacity duration-150 top-4 right-4 bg-white rounded-full p-1 '>
-                                <IoMdPlay size={18} className='text-black pl-0.5' />
-                            </div>
-                        </button>
-                        <button className='group whitespace-nowrap w-full relative hover:bg-[#353535] transition duration-150 px-4 py-2 text-left rounded-lg'>
-                            <h1 className='text-base font-medium'>Miusic2 Definitive</h1>
-                            <p className='text-xs text-[#B4B4B4]'>Pablo Kampmann</p>
-                            <div className=' absolute group-hover:opacity-100 opacity-0 transition-opacity duration-150 top-4 right-4 bg-white rounded-full p-1 '>
-                                <IoMdPlay size={18} className='text-black pl-0.5' />
-                            </div>
-                        </button>
+                        {playlists.map((playlist, index) => (
+                            <button key={index} className='group whitespace-nowrap focus:outline-none w-full relative hover:bg-[#353535] transition duration-150 px-4 py-2 text-left rounded-lg'>
+                                <h1 className='text-base group-hover:w-[80%] truncate text-start  font-medium'>{playlist.name}</h1>
+                                <p className='text-xs text-[#B4B4B4]'>{playlist.info}</p>
+                                <div className=' absolute group-hover:opacity-100 opacity-0 transition-opacity duration-150 top-4 right-4 bg-white rounded-full p-1 '>
+                                    <IoMdPlay size={18} className='text-black pl-0.5' />
+                                </div>
+                            </button>
+                        ))}
                     </div>
                 </div>
             ) : (

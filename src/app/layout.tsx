@@ -25,12 +25,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="h-screen w-full overflow-y-hidden">
-          {/*  <TopBar />*/}
           <NavBar minimize={minimize} handleSideBar={handleSideBar} />
           <div className="flex h-full">
             <SideBar minimize={minimize} />
             {children}
           </div>
+
         </div>
       </body>
     </html>

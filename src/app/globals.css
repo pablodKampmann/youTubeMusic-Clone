@@ -18,12 +18,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -34,7 +31,8 @@ body {
 
 /* Estilo básico de la barra de desplazamiento */
 :root {
-  --scrollbar-color: #AAAAAA; /* Color por defecto */
+  --scrollbar-color: #AAAAAA;
+  /* Color por defecto */
 }
 
 ::-webkit-scrollbar {
@@ -66,12 +64,18 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-
 .container {
-  overflow-x: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 
 }
 
-.container:hover {
-  overflow-x: auto;
+.container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  transition: background-color 1000ms ease;
+}
+
+.container:hover::-webkit-scrollbar-thumb {
+  background-color: #5E5E5E;
 }
