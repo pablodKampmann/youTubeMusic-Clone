@@ -23,7 +23,7 @@ export default function ListenAgain() {
         },
         {
             name: "Hummingbird",
-            info: "Metro Boomin y James Blake • METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE (SOUNDTRACK FROM AND INSPIRED BY THE MOTION PICTURE)",
+            info: "Metro Boomin y James Blake • METRO BOOMIN • 2020",
             explicit: false,
             imgSrc: "/quickPicks/hummingbird.jpg"
         },
@@ -82,11 +82,12 @@ export default function ListenAgain() {
             imgSrc: "/quickPicks/love.jpg"
         },
         {
-            name: "Objects in the Mirror",
-            info: "Mac Miller • Watching Movies with the Sound Off • 2013",
-            explicit: false,
-            imgSrc: "/quickPicks/objects_in_the_mirror.jpg"
+            name: "Trance",
+            info: "Metro Boomin, Travis Scott y Young Thug • HEROE",
+            explicit: true,
+            imgSrc: "/quickPicks/trance.jpg"
         },
+
     ];
 
     return (
@@ -111,21 +112,21 @@ export default function ListenAgain() {
                 </div>
             </div>
 
-            <div className="flex justify-center px-6 mt-4 space-x-4 container w-full  h-[260px]">
-                
-                <div className="flex-col flex justify-center items-center w-[33.3%] h-full ">
+            <div className="flex overflow-y-hidden justify-start items-center space-x-0.5 container  mt-8 pb-4 px-2 w-full  h-[280px]">
+
+                <div className="flex-col  flex justify-center space-y-0.5 items-center w-1/3 h-full ">
                     {songs.slice(0, 4).map((song, index) => (
                         <div key={index} className="relative flex h-1/4 hover:border-[#343434] border-2 border-transparent rounded-lg cursor-pointer group w-full justify-start  items-center">
-                            <div className="relative w-[20%] h-[20%]  group-hover:opacity-100 cursor-pointer transition duration-300 hover:shadow-2xl rounded-lg flex justify-center items-center">
+                            <div className="relative  w-[20%] h-[20%]  group-hover:opacity-100 cursor-pointer transition duration-300 hover:shadow-2xl rounded-lg flex justify-center items-center">
                                 <Image quality={100} className=' h-[52px] w-[52px] group-hover:opacity-50 transition duration-150 rounded-md select-none  object-cover ' src={song.imgSrc} alt={`song${index}`} width={120} height={120} />
                                 <IoMdPlay className="absolute group-hover:opacity-100  opacity-0 transition duration-150" size={22} />
                             </div>
-                            <div className="flex-col ml-2 mb-2 group-hover:w-[35%]  w-[70%]">
+                            <div className="flex-col ml-2 mb-2 group-hover:w-[35%]    w-[75%]">
                                 <h1 className="mt-2.5 font-semibold truncate leading-5">{song.name}</h1>
                                 {song.explicit === true ? (
                                     <div className="flex whitespace-break-spaces relative">
                                         <MdExplicit className="text-[#B4B4B4] absolute top-0" size={19} />
-                                        <h2 className="  leading-5 truncate  cursor-pointer hover:underline text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{song.info}</h2>
+                                        <h2 className="  leading-5 truncate  text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="cursor-pointer hover:underline">{song.info}</span></h2>
                                     </div>
                                 ) : (
                                     <div className="flex relative  whitespace-break-spaces">
@@ -140,23 +141,21 @@ export default function ListenAgain() {
                             </div>
                         </div >
                     ))}
-
-
                 </div>
 
-                <div className="flex-col flex justify-center items-center w-[33.3%] h-full ">
-                    {songs.slice(4, 8).map((song, index) => (
+                <div className="flex-col flex justify-center space-y-0.5 items-center w-1/3 h-full ">
+                    {songs.slice(0, 4).map((song, index) => (
                         <div key={index} className="relative flex h-1/4 hover:border-[#343434] border-2 border-transparent rounded-lg cursor-pointer group w-full justify-start  items-center">
-                            <div className="relative w-[20%] h-[20%]  group-hover:opacity-100 cursor-pointer transition duration-300 hover:shadow-2xl rounded-lg flex justify-center items-center">
+                            <div className="relative  w-[20%] h-[20%]  group-hover:opacity-100 cursor-pointer transition duration-300 hover:shadow-2xl rounded-lg flex justify-center items-center">
                                 <Image quality={100} className=' h-[52px] w-[52px] group-hover:opacity-50 transition duration-150 rounded-md select-none  object-cover ' src={song.imgSrc} alt={`song${index}`} width={120} height={120} />
                                 <IoMdPlay className="absolute group-hover:opacity-100  opacity-0 transition duration-150" size={22} />
                             </div>
-                            <div className="flex-col ml-2 mb-2 group-hover:w-[35%]  w-[70%]">
+                            <div className="flex-col ml-2 mb-2 group-hover:w-[35%]   w-[75%]">
                                 <h1 className="mt-2.5 font-semibold truncate leading-5">{song.name}</h1>
                                 {song.explicit === true ? (
                                     <div className="flex whitespace-break-spaces relative">
                                         <MdExplicit className="text-[#B4B4B4] absolute top-0" size={19} />
-                                        <h2 className="  leading-5 truncate  cursor-pointer hover:underline text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{song.info}</h2>
+                                        <h2 className="  leading-5 truncate  text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="cursor-pointer hover:underline">{song.info}</span></h2>
                                     </div>
                                 ) : (
                                     <div className="flex relative  whitespace-break-spaces">
@@ -171,23 +170,21 @@ export default function ListenAgain() {
                             </div>
                         </div >
                     ))}
-
-
                 </div>
 
-                <div className="flex-col flex justify-center items-center w-[33.3%] h-full ">
-                    {songs.slice(8, 12).map((song, index) => (
+                <div className="flex-col  flex justify-center space-y-0.5 items-center w-1/3 h-full ">
+                    {songs.slice(0, 4).map((song, index) => (
                         <div key={index} className="relative flex h-1/4 hover:border-[#343434] border-2 border-transparent rounded-lg cursor-pointer group w-full justify-start  items-center">
-                            <div className="relative w-[20%] h-[20%]  group-hover:opacity-100 cursor-pointer transition duration-300 hover:shadow-2xl rounded-lg flex justify-center items-center">
+                            <div className="relative  w-[20%] h-[20%]  group-hover:opacity-100 cursor-pointer transition duration-300 hover:shadow-2xl rounded-lg flex justify-center items-center">
                                 <Image quality={100} className=' h-[52px] w-[52px] group-hover:opacity-50 transition duration-150 rounded-md select-none  object-cover ' src={song.imgSrc} alt={`song${index}`} width={120} height={120} />
                                 <IoMdPlay className="absolute group-hover:opacity-100  opacity-0 transition duration-150" size={22} />
                             </div>
-                            <div className="flex-col ml-2 mb-2 group-hover:w-[35%]  w-[70%]">
+                            <div className="flex-col ml-2 mb-2 group-hover:w-[35%]    w-[75%]">
                                 <h1 className="mt-2.5 font-semibold truncate leading-5">{song.name}</h1>
                                 {song.explicit === true ? (
                                     <div className="flex whitespace-break-spaces relative">
                                         <MdExplicit className="text-[#B4B4B4] absolute top-0" size={19} />
-                                        <h2 className="  leading-5 truncate  cursor-pointer hover:underline text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{song.info}</h2>
+                                        <h2 className="  leading-5 truncate  text-[#B2B2B2]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="cursor-pointer hover:underline">{song.info}</span></h2>
                                     </div>
                                 ) : (
                                     <div className="flex relative  whitespace-break-spaces">
@@ -202,13 +199,10 @@ export default function ListenAgain() {
                             </div>
                         </div >
                     ))}
-
-
                 </div>
 
-                
+               
 
-                
             </div>
         </div>
     );

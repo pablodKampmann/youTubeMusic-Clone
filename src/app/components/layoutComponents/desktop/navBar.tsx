@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { IoMenuOutline } from "react-icons/io5";
-import { usePathname } from 'next/navigation'
 import { IoSearchOutline } from "react-icons/io5";
 import { PiScreencastLight } from "react-icons/pi";
 interface Props {
@@ -15,7 +14,7 @@ export default function NavBar({ minimize, handleSideBar }: Props) {
     const [inputContainer, setInputContainer] = useState<string>('');
 
     return (
-        <div className="w-full  h-[9%] flex border-b border-[#292929] items-center  bg-[#030303]">
+        <div className="w-full h-[9%] flex border-b border-[#292929] items-center  bg-[#030303]">
             <button onClick={() => handleSideBar(!minimize)} className='mr-3 focus:outline-none hover:bg-white hover:bg-opacity-10 transition dura rounded-full m-5 p-1.5 cursor-pointer'>
                 <IoMenuOutline size={28} className='' />
             </button>

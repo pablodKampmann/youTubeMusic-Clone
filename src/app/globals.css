@@ -68,7 +68,6 @@ input::-webkit-inner-spin-button {
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-
 }
 
 .container::-webkit-scrollbar-thumb {
@@ -78,4 +77,34 @@ input::-webkit-inner-spin-button {
 
 .container:hover::-webkit-scrollbar-thumb {
   background-color: #5E5E5E;
+}
+
+/* Mobile Layout */
+.mobile-version {
+  display: none; /* Initially hide mobile layout */
+}
+
+/* Desktop Layout */
+.desktop-version {
+  display: none; /* Initially hide desktop layout */
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  .mobile-version {
+      display: block; /* Show mobile layout */
+  }
+  .desktop-version {
+      display: none; /* Hide desktop layout on mobile devices */
+  }
+}
+
+/* Media Query for Desktop Devices */
+@media only screen and (min-width: 769px) {
+  .mobile-version {
+      display: none; /* Hide mobile layout on desktop devices */
+  }
+  .desktop-version {
+      display: block; /* Show desktop layout */
+  }
 }

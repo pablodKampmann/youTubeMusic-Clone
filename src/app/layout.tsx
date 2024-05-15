@@ -2,9 +2,9 @@
 
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import TopBar from "./components/topBar";
-import SideBar from "./components/sideBar";
-import NavBar from "./components/navBar";
+import SideBar from "./components/layoutComponents/desktop/sideBar";
+import NavBarDesktop from "./components/layoutComponents/desktop/navBar";
+import NavBarMobile from "./components/layoutComponents/mobile/navBar";
 import React, { useState, useEffect } from 'react';
 
 const inter = Roboto({ subsets: ["latin"], weight: ["400"] });
@@ -24,14 +24,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="h-screen w-full overflow-y-hidden">
-          <NavBar minimize={minimize} handleSideBar={handleSideBar} />
+        {/* Desktop */}
+        <div className="h-screen desktop-version w-full overflow-y-hidden">
+          <NavBarDesktop minimize={minimize} handleSideBar={handleSideBar} />
           <div className="flex h-full">
             <SideBar minimize={minimize} />
             {children}
           </div>
+        </div>
+
+        {/* Mobile */}
+        <div className="h-screen mobile-version w-full overflow-y-hidden">
+          <NavBarMobile minimize={minimize} handleSideBar={handleSideBar} />
 
         </div>
+
       </body>
     </html>
   );
