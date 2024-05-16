@@ -2,7 +2,8 @@
 
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import SideBar from "./components/layoutComponents/desktop/sideBar";
+import SideBarDesktop from "./components/layoutComponents/desktop/sideBar";
+import SideBarMobile from "./components/layoutComponents/mobile/sideBar";
 import NavBarDesktop from "./components/layoutComponents/desktop/navBar";
 import NavBarMobile from "./components/layoutComponents/mobile/navBar";
 import React, { useState, useEffect } from 'react';
@@ -24,11 +25,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+
         {/* Desktop */}
         <div className="h-screen desktop-version w-full overflow-y-hidden">
           <NavBarDesktop minimize={minimize} handleSideBar={handleSideBar} />
           <div className="flex h-full">
-            <SideBar minimize={minimize} />
+            <SideBarDesktop minimize={minimize} />
             {children}
           </div>
         </div>
@@ -36,7 +38,7 @@ export default function RootLayout({
         {/* Mobile */}
         <div className="h-screen mobile-version w-full overflow-y-hidden">
           <NavBarMobile minimize={minimize} handleSideBar={handleSideBar} />
-
+          <SideBarMobile minimize={minimize} handleSideBar={handleSideBar}/>
         </div>
 
       </body>
