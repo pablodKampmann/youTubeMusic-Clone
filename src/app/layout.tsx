@@ -39,6 +39,7 @@ export default function RootLayout({
         <div className="h-screen mobile-version w-full overflow-y-hidden">
           <NavBarMobile minimize={minimize} handleSideBar={handleSideBar} />
           <SideBarMobile minimize={minimize} handleSideBar={handleSideBar}/>
+          {children}
         </div>
 
       </body>
