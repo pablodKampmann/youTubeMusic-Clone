@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ListenAgain from "./components/homeComponents/desktop/listenAgain";
-import QuickPicks from "./components/homeComponents/desktop/listenAgain"
+import QuickPicks from "./components/homeComponents/desktop/quickPicks"
 
 export default function Home() {
   return (
